@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WatchyServer</string>
+    <string name="ble_service_name">ble-watchy-service</string>
+    <string name="ble_service_running_notification">Bluetooth LE Service running</string>
+</resources>
