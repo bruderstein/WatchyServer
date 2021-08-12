@@ -9,7 +9,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_server)
         Log.i("WatchyMainActivity", "main activity on create")
-        val intent1 = Intent(this@MainActivity, BleService::class.java)
-        startService(intent1)
+        val bleServiceIntent = Intent(this@MainActivity, BleService::class.java)
+        startService(bleServiceIntent)
+        val notificationListenerIntent = Intent(this@MainActivity, WatchyNotificationListener::class.java)
+        startService(notificationListenerIntent)
     }
 }
